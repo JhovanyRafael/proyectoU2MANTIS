@@ -1,3 +1,38 @@
+/* ====== MENÚ DE NAVEGACIÓN TIENDA ====== */
+.tienda-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    background: #fff;
+    padding: 18px 0 10px 0;
+    border-bottom: 2px solid #27ae60;
+}
+.tienda-nav a {
+    color: #27ae60;
+    font-size: 1.5em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.2s, font-size 0.2s;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+.tienda-nav a:hover {
+    color: #fff;
+    background: #27ae60;
+    font-size: 1.7em;
+}
+.tienda-titulo-menu {
+    text-align: center;
+    font-size: 2.8em;
+    color: #2c3e50;
+    font-weight: bold;
+    margin: 10px 0 30px 0;
+    letter-spacing: 2px;
+}
 *{
     box-sizing: border-box;/*para q no crezca los espacios*/
 }
@@ -6,7 +41,7 @@
 body{
     font-family: "Arial";
     font-size: 13px;
-    background-color: rgb(38 ,6 ,44);
+    background-color: rgb(38, 6, 44);;
     margin-top: 5px;
 }
 
@@ -16,7 +51,7 @@ display:inline-block;/*usará el espacio del elemento, no del contenido. */
 }
 
 p
-{color:rgb(32, 21, 191);
+{color:rgb(2, 255, 52);
 }
 
 header
@@ -51,7 +86,7 @@ width: 50px;
 
 header .contenedor nav a
 {
-color:rgb(32, 78, 170);
+color:rgb(38, 6, 44);
 text-decoration: none;
 margin:5px 5px;
 font-size: 15px;
@@ -61,7 +96,7 @@ font-weight:bold
 
 header .contenedor nav a:hover
 {
-color:rgb(44, 203, 60);
+color:rgb(10, 255, 83);
 
 }
 
@@ -220,7 +255,7 @@ margin-left: -200px;
 
 #inicio .bloque-inicio h1
 {
-color: rgb(33, 177, 199);
+color: rgb(0, 255, 72);
 font-size: 35px;
 
 
@@ -228,7 +263,7 @@ font-size: 35px;
 
 #inicio .bloque-inicio p
 {
-color: rgb(39, 170, 235);
+color: rgb(2, 255, 52);
 font-size: 16px;
 
 }
@@ -249,7 +284,7 @@ font-size: 16px;
 
 .boton.boton-verde{
     color:white;
-    background-color: rgb(29, 117, 53);
+    background-color: rgb(255, 6, 189);
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
@@ -281,15 +316,15 @@ font-size: 16px;
 #nosotros
 {
    /*background-image: url(img/latas.jpg);*/
-   background-color: rgb(163, 7, 148); 
+   background-color: rgb(38, 6, 44); 
    background-size: cover;
-   color: white;
+   color: rgb(127, 255, 22);
    text-align: center;
 }
 
 #nosotros p
 {
-color: white;
+color: rgb(255, 255, 255);
 text-align: center;
 font-size: 16px;
 /*margin:0;*/
@@ -297,7 +332,7 @@ font-size: 16px;
 
 #servicios .bloque-servicio
 {
-    border:1px solid grey
+    border:1px solid rgb(48, 9, 131)
 }
 
 
@@ -535,4 +570,84 @@ footer .redes a :hover
     display: block;
     margin: 0 auto;
     border-radius: 15px;
+}
+.tienda-separador {
+    margin: 40px 0;
+    border-top: 3px dashed #27ae60;
+}
+
+/* ===================================================== */
+/* =============== ESTILOS PARA TIENDA ================= */
+/* ===================================================== */
+.tienda-section {
+    background: #2ffe00;
+    padding: 40px 0;
+}
+
+.tienda-titulo {
+    text-align: center;
+    font-size: 4em;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    letter-spacing: 2px;
+}
+
+
+.tienda-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tienda-producto {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.tienda-producto:hover {
+    box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+}
+
+.tienda-producto img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.tienda-producto h4 {
+    font-size: 1.2em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.tienda-producto p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.tienda-producto .boton-comprar {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.tienda-producto .boton-comprar:hover {
+    background: #219150;
 }

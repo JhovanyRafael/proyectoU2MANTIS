@@ -2,137 +2,75 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content=""
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini Tienda</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-    }
-
-    body {
-      background: #f4f6f8;
-      color: #333;
-    }
-
-    header {
-      background: #0d6efd;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-
-    .contenedor {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .productos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .producto {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .producto:hover {
-      transform: translateY(-5px);
-    }
-
-    .producto img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .info {
-      padding: 15px;
-      text-align: center;
-    }
-
-    .info h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #222;
-    }
-
-    .info p {
-      color: #666;
-      margin-bottom: 15px;
-    }
-
-    .precio {
-      font-size: 20px;
-      font-weight: bold;
-      color: #0d6efd;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      background: #0d6efd;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #0b5ed7;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <header>
-    🛍️ Mini Tienda
+    <nav class="tienda-nav">
+      <a href="index.html">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#soporte">Soporte</a>
+      <a href="#blog">Blog</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="tienda-titulo-menu">🛍️ Mini Tienda</div>
   </header>
-
-  <div class="contenedor">
-    <div class="productos">
-      <div class="producto">
-        <img scr="img/Estante.jpg">
-        <div class="info">
-          <h3>Producto 1</h3>
-          <p>Descripción breve del producto.</p>
-          <div class="precio">$19.99</div>
-          <button class="btn">Comprar</button>
-        </div>
+  <section class="tienda-section">
+    <h2 class="tienda-titulo">Nuestros Productos</h2>
+    <div class="tienda-productos">
+      <div class="tienda-producto">
+  <img src="img/Estante.jpg" alt="Estante" />
+        <h4>Estante</h4>
+        <p>Estante de acero inoxidable.</p>
+        <button class="boton-comprar">Comprar</button>
       </div>
-
-      <div class="producto">
-        <img src="https://picsum.photos/400/200?random=2" alt="Producto 2">
-        <div class="info">
-          <h3>Producto 2</h3>
-          <p>Ideal para tu día a día.</p>
-          <div class="precio">$29.99</div>
-          <button class="btn">Comprar</button>
-        </div>
+      <div class="tienda-producto">
+  <img src="img/Vitrina.jpg" alt="Vitrina" />
+        <h4>Vitrina</h4>
+        <p>Vitrina para exhibición.</p>
+        <button class="boton-comprar">Comprar</button>
       </div>
-
-      <div class="producto">
-        <img src="https://picsum.photos/400/200?random=3" alt="Producto 3">
-        <div class="info">
-          <h3>Producto 3</h3>
-          <p>Alta calidad y diseño moderno.</p>
-          <div class="precio">$39.99</div>
-          <button class="btn">Comprar</button>
-        </div>
+      <div class="tienda-producto">
+  <img src="img/horno.jpg" alt="Horno" />
+        <h4>Horno</h4>
+        <p>Horno industrial.</p>
+        <button class="boton-comprar">Comprar</button>
+      </div>
+      <div class="tienda-producto">
+  <img src="img/cocina.jpg" alt="Cocina" />
+        <h4>Cocina</h4>
+        <p>Cocina industrial.</p>
+        <button class="boton-comprar">Comprar</button>
+      </div>
+      <div class="tienda-producto">
+  <img src="img/galeria1.jpeg" alt="Producto extra 1" />
+        <h4>Producto extra 1</h4>
+        <p>Producto adicional de la tienda.</p>
+        <button class="boton-comprar">Comprar</button>
+      </div>
+      <div class="tienda-producto">
+  <img src="img/galeria2.jpeg" alt="Producto extra 2" />
+        <h4>Producto extra 2</h4>
+        <p>Producto adicional de la tienda.</p>
+        <button class="boton-comprar">Comprar</button>
       </div>
     </div>
-  </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.boton-comprar').forEach(function(boton) {
+      boton.addEventListener('click', function() {
+        const producto = this.parentElement.querySelector('h4').textContent;
+        alert('Has comprado: ' + producto);
+        // Aquí puedes agregar lógica para carrito, pago, etc.
+      });
+    });
+  </script>
 </body>
 </html>
 

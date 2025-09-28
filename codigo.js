@@ -24,6 +24,16 @@ document.getElementById('input-nombre').value = "";
   }
   
 
+// Funcionalidad de compra en la tienda
+document.querySelectorAll('.boton-comprar').forEach(function(boton) {
+  boton.addEventListener('click', function() {
+    const producto = this.parentElement.querySelector('h4').textContent;
+    alert('Has comprado: ' + producto);
+    // Aquí puedes agregar lógica para carrito, pago, etc.
+  });
+});
+
+
   
 
 

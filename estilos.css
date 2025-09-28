@@ -1,3 +1,47 @@
+@media (max-width: 768px) {
+    #galeria .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    #galeria .columna {
+        width: 100%;
+        padding: 0;
+    }
+    #galeria .cuadrado-perfecto {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+}
+/* =================== RESPONSIVE: NOSOTROS Y MAPA =================== */
+@media (max-width: 768px) {
+    #nosotros .contenedor {
+        padding: 0 8px;
+        width: 100%;
+    }
+    #nosotros h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+    #nosotros p {
+        font-size: 1em;
+        text-align: justify;
+        padding: 0 4px;
+    }
+    #contactenos iframe {
+        width: 100% !important;
+        height: 250px !important;
+        position: static;
+        margin-bottom: 18px;
+        border-radius: 10px;
+        display: block;
+    }
+    #contactenos .contenedor-fluid {
+        padding: 0 8px;
+        width: 100%;
+    }
+}
 /* =================== RESPONSIVE =================== */
 @media (max-width: 768px) {
     .contenedor, .contenedor-fluid {

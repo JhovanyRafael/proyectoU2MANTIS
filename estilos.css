@@ -1,3 +1,56 @@
+/* =================== RESPONSIVE =================== */
+@media (max-width: 768px) {
+    .contenedor, .contenedor-fluid {
+        width: 100%;
+        padding: 0 8px;
+        margin: 0;
+    }
+    header {
+        padding: 18px 0;
+        position: static;
+    }
+    .fila, .row, .tienda-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .columna, .columna-33, .columna-25, .columna-50 {
+        width: 100%;
+        padding: 0;
+    }
+    .banner-principal, #inicio img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .tienda-nav a {
+        font-size: 1.1em;
+        margin: 8px 0;
+        padding: 8px 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .tienda-titulo, .tienda-titulo-menu {
+        font-size: 2em;
+        margin: 18px 0;
+    }
+    .tienda-productos {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .tienda-producto {
+        width: 100%;
+        padding: 12px;
+    }
+    .cuadrado-perfecto, .cuadrado-perfecto2 {
+        width: 100%;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+    footer {
+        padding: 10px 0;
+    }
+}
 /* ====== MENÚ DE NAVEGACIÓN TIENDA ====== */
 .tienda-nav {
     display: flex;

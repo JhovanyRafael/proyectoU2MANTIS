@@ -9,7 +9,7 @@
     border-bottom: 2px solid #27ae60;
 }
 .tienda-nav a {
-    color: #27ae60;
+    color: #ffffff;
     font-size: 1.5em;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: bold;
@@ -17,6 +17,7 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
     transition: color 0.2s, font-size 0.2s;
+    background: linear-gradient(125deg, #021e09, #1ac834);
     padding: 6px 12px;
     border-radius: 6px;
 }
@@ -51,19 +52,19 @@ display:inline-block;/*usará el espacio del elemento, no del contenido. */
 }
 
 p
-{color:rgb(2, 255, 52);
+{color:rgb(92, 8, 103);
 }
 
 header
 {
 
-padding: 40px 0;
+padding: 22px 0;
 position: fixed;/*posicion fija*/
 top: 0;
 left:0;/*pegado a la izquierda*/
 z-index: 2; /*para que este encima*/
 width: 100%;/*para q ocupe todo el ancho*/
-background-color: rgb(225, 225, 225);
+ background: linear-gradient(125deg, #ffffff, #ffffff);
 }
 
 header.contenedor
@@ -76,7 +77,11 @@ align-items: center;
 
 header .contenedor .logo /*tamaño del logo*/
 {
-width: 50px;
+width: 69px;
+background: linear-gradient(125deg, #1b281e, #66067e);
+    padding: 6px 12px;
+    border-radius: 6px;
+
 }
 
 header .contenedor .tienda
@@ -86,17 +91,20 @@ width: 50px;
 
 header .contenedor nav a
 {
-color:rgb(38, 6, 44);
-text-decoration: none;
+color:rgb(255, 255, 255);
+background: linear-gradient(125deg, #000000, #8b1783);
+padding: 6px 12px;
+border-radius: 6px;
+text-decoration: rgb(2, 1, 2);
 margin:5px 5px;
-font-size: 15px;
+font-size: 13px;
 font-family: "Montserrat";
 font-weight:bold
 }
 
 header .contenedor nav a:hover
 {
-color:rgb(10, 255, 83);
+color:rgb(255, 0, 234);
 
 }
 
@@ -116,14 +124,16 @@ color:rgb(10, 255, 83);
 .cuadrado-perfecto2
 {
     width: 100%;
-    border: 6px solid #006064;
+    border: 6px solid #77028b;
     border-radius: 20px;
     text-decoration: none;
     font-family: 'Segoe UI', 'Arial', sans-serif; /* Moderna y legible */
     font-size: 18px; /* Tamaño cómodo para lectura */
     font-weight: 500; /* Semi-negrita para resaltar */
     font-style: normal;
-    color: aqua;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
 
     /*padding-bottom: 100%;*/
     
@@ -171,6 +181,8 @@ position: relative;
     flex-wrap:wrap;
     margin-right: -15px;
     margin-left: -15px;
+    text-align: center;
+
 }
 
 .fila{
@@ -245,7 +257,7 @@ display: block;/*no genera espacios a los lados*/
 #inicio .bloque-inicio
 {
 position: absolute;/*el espacio no se mantiene no va a ocupar un espacio*/
-top:50%;/*desde arriba hacia la mitad de la pantalla del bloque inicio*/
+top:70%;/*desde arriba hacia la mitad de la pantalla del bloque inicio*/
 left: 50%;
 width: 400px;
 text-align: center;
@@ -255,16 +267,16 @@ margin-left: -200px;
 
 #inicio .bloque-inicio h1
 {
-color: rgb(0, 255, 72);
+color: rgb(241, 236, 244);
 font-size: 35px;
-
-
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #inicio .bloque-inicio p
 {
-color: rgb(2, 255, 52);
-font-size: 16px;
+color: rgb(200, 142, 197);
+font-size: 23px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -277,14 +289,14 @@ font-size: 16px;
 
 .boton.boton-rojo{
     color:white;
-    background-color: red;
+    background-color: rgb(0, 255, 51);
     font-size: 20px;
     font-weight: bold;
 }
 
 .boton.boton-verde{
     color:white;
-    background-color: rgb(255, 6, 189);
+    background: linear-gradient(125deg, #776bb2, #6e1282);
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
@@ -318,8 +330,10 @@ font-size: 16px;
    /*background-image: url(img/latas.jpg);*/
    background-color: rgb(38, 6, 44); 
    background-size: cover;
-   color: rgb(127, 255, 22);
+   color: rgb(255, 255, 255);
    text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 16px;
 }
 
 #nosotros p
@@ -327,6 +341,7 @@ font-size: 16px;
 color: rgb(255, 255, 255);
 text-align: center;
 font-size: 16px;
+font-family: ;
 /*margin:0;*/
 }
 
@@ -372,7 +387,7 @@ font-size: 16px;
     margin-top: 0;
     font-size:25px;
     text-align: center;
-    color: chartreuse;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -504,7 +519,7 @@ footer .barra-footer
 
 footer .barra-desarrollador
 {
-    background-color: rgb(6, 250, 22);
+    background-color: rgb(24, 0, 52);
     text-align: left;
     padding-left: 15px;
     padding-right: 15px;
@@ -606,7 +621,7 @@ footer .redes a :hover
 .tienda-producto {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(160, 12, 12, 0.08);
     padding: 20px;
     width: 260px;
     text-align: center;
@@ -614,7 +629,7 @@ footer .redes a :hover
 }
 
 .tienda-producto:hover {
-    box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .tienda-producto img {
@@ -627,13 +642,13 @@ footer .redes a :hover
 
 .tienda-producto h4 {
     font-size: 1.2em;
-    color: #2980b9;
+    color: #006a05a8;
     margin-bottom: 10px;
 }
 
 .tienda-producto p {
     font-size: 1em;
-    color: #555;
+    color: #000000;
     margin-bottom: 12px;
 }
 
